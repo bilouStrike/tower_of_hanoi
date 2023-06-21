@@ -30,6 +30,7 @@ function App() {
 
   return (
     <TowerContext.Provider value={{disks, selecteTower, setSelecteTower, setDisk}}>
+      <h1>Towers of Hanoi</h1>
       <Container>
         {Object.keys(disks).map((disk) => 
           <Tower key={disk} currentDisk={disks[disk]} tower={disk} />
