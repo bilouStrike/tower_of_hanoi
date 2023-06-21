@@ -26,7 +26,7 @@ function App() {
 
   const handleNewGame = useCallback(() => 
     setDisk({...disks, disk_1: [5,4,3,2,1], disk_2: [], disk_3: []})
-  , [disks]);
+  ,[disks]);
 
   return (
     <TowerContext.Provider value={{disks, selecteTower, setSelecteTower, setDisk}}>
