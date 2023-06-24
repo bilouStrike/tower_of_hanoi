@@ -31,6 +31,7 @@ function App() {
   return (
     <TowerContext.Provider value={{disks, selecteTower, setSelecteTower, setDisk}}>
       <h1>Towers of Hanoi</h1>
+      <p>This is a Towers of Hanoi game implemented using ReactJS.<br/> The Towers of Hanoi is a classic mathematical puzzle that consists of three rods and a number of disks of different sizes.<br/> The objective of the puzzle is to move the entire stack of disks from one rod to another following a few simple rules.</p>
       <Container>
         {Object.keys(disks).map((disk) => 
           <Tower key={disk} currentDisk={disks[disk]} tower={disk} />
